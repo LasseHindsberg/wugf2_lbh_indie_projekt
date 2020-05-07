@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>League of Legends &middot; The Rise of Esports</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Adding fonts from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- adding font awesome logos -->
+    <script src="https://kit.fontawesome.com/87c28705a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="main-head">League of Legends &middot; The Rise of Esports</h1>
+    </header>
+    <!-- NAV BAR WITH DROPDOWNS -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="img/navbar-icon.png" alt="Logo" id="nav-icon"></a>
+
+            <a href="timeline.html">Timeline</a>
+
+            <a href="events.html">Events</a>
+
+            <div class="dropdown">
+                <a href="regions.html" class="dropbtn">Regions<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="regions.html">LPL - China</a>
+                    <a href="regions.html">LCK - Korea</a>
+                    <a href="regions.html">LEC - Europe</a>
+                    <a href="regions.html">LCS - North America</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="teams.html" class="dropbtn">Teams<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="teams.html">LPL - FPX, iG , JDG</a>
+                    <a href="teams.html">LCK - T1. DRX, GEN</a>
+                    <a href="teams.html">LEC - G2, FNC, MAD</a>
+                    <a href="teams.html">LCS - C9, FLY, EG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- SLIDESHOW FOR MAIN PAGE -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1/6</div>
+                <img class="slideshow-image" src="img/LEC-slideshow.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2/6</div>
+                <img class="slideshow-image" src="img/LCK-slideshow.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3/6</div>
+                <img class="slideshow-image" src="img/LCS-slideshow.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4/6</div>
+                <img class="slideshow-image" src="img/LPL-slideshow.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5/6</div>
+                <img class="slideshow-image" src="img/MSI-slideshow.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6/6</div>
+                <img class="slideshow-image" src="img/WORLDS-slideshow.jpg" style="width:100%;">
+            </div>
+            <!-- NEXT AND PREVIOUS BUTTONS -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-square-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fas fa-caret-square-right"></i></a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images (along bottom) -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/LEC-slideshow.jpg" style="width: 100%;" onclick="currentSlide(1)"
+                        alt="LEC Finals">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/LCK-slideshow.jpg" style="width: 100%;" onclick="currentSlide(2)"
+                        alt="LCK Finals">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/LCS-slideshow.jpg" style="width: 100%;" onclick="currentSlide(3)"
+                        alt="LCS Finals">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/LPL-slideshow.jpg" style="width: 100%;" onclick="currentSlide(4)"
+                        alt="LPL Finals">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/MSI-slideshow.jpg" style="width: 100%;" onclick="currentSlide(5)"
+                        alt="MSI Finals">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/WORLDS-slideshow.jpg" style="width: 100%;"
+                        onclick="currentSlide(6)" alt="Worlds Finals">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

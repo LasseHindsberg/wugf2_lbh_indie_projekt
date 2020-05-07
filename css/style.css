@@ -1,0 +1,333 @@
+RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* STYLING FONTS */
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1.5px;
+    color: #1F2326;
+    font-weight: 100;
+    font-size: 2.4em;
+    text-align: center;
+
+}
+h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+
+}
+a,p,button {
+    font-family: 'Roboto', sans-serif;
+    color: #d9ccb4;
+}
+:root {
+    font-size: 16px;
+    background-color: #736e65;
+    scroll-behavior: smooth;
+}
+/* Styling Main Header */
+#main-head {
+color: #736e65;
+background-color: #0D0C0B;
+text-align: center;
+padding: 14px 16px;
+}
+
+/* --- NAVBAR STYLING --- */
+.navbar {
+    overflow: hidden;
+    background-color: #736e65;
+    height: 64px;
+    border-bottom: thin solid #0D0C0B
+}
+/* Styling logo */
+#nav-icon {
+    width: 32px;
+    height: auto;
+}
+/* styling links inside nav */
+.navbar a {
+    float: left;
+    font-size: 1rem;
+    color: #d9ccb4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    min-width: 160px;
+    height: 64px;
+}
+/* styling dropdowns */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* add background color on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #1f2326;
+}
+/* Styling dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #736e65;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: thin solid #0D0C0B;
+    border-bottom: none;
+}
+
+/* Styling links inside dropdown */
+.dropdown-content a {
+    float: none;
+    color: #d9ccb4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 2px solid #0D0C0B;
+}
+
+/* add different background on dropdown hover */
+.dropdown-content a:hover {
+    background-color: #1f2326;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- SLIDESHOW STYLING --- */
+/* position container so prev/next arrows doesnt f*ck up */
+.slideshow-container {
+    position: relative;
+    background-color: #736e65;
+}
+
+/* Hide images by default */
+.mySlides {
+    display: none;
+}
+/* pointer when hovering over thumbnail */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next/Prev buttons */
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #d9ccb4;
+    font-size: 20px;
+    border-bottom: 0 3px 3px 0;
+}
+/* positioning 'next' to right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover add a background */
+.prev:hover, .next:hover {
+    background-color: rgba(30, 35, 38, 0.8);
+}
+
+/* Styling number text */
+.numbertext {
+    color: #d9ccb4;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: rgba(30, 35, 38, 0.8);
+    padding: 2px 16px;
+    color: #d9ccb4;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/* --- TIMELINE STYLING --- */
+#timeline-head {
+    letter-spacing: 1.5px;
+    color: #1F2326;
+    font-weight: 100;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.timeline h2, .timeline h3 {
+    color: #1F2326;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+
+.timeline p {
+    color: #d9ccb4;
+    font-weight: 300;
+}
+#timeline-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* Timeline */
+.timeline {
+    border-left: 4px solid #1f2326;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'roboto', sans-serif;
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 30%;
+  }
+  .timeline h1 {
+    font-family: 'roboto slab', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;
+  }
+  .timeline h2,
+  .timeline h3 {
+    font-family: 'roboto slab', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+  }
+  .timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.timeline .event:before {
+    left: -217.5px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'roboto', sans-serif;
+}
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #1F2326;
+    left: -57.85px;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
+
+/* --- EVENT STYLING --- */
+.wrapper {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    
+    
+    
+}
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.img-caption {
+    text-align: center;
+}
+
+/* --- REGIONS STYLING --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 100%;
+}
+
+.grid img{
+    width: 100%;
+}
+
+/*  --- TEANS STYLING --- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 100px 1fr 100px;
+}
+
+
+/* Colour theme 1 - Subtle Colours */
+/* Color Theme Swatches in Hex */
+/* { color: #1F2326; }
+{ color: #D9CCB4; }
+{ color: #0D0C0B; }
+{ color: #736E65; }
+{ color: #A69581; } */
+/* Color Theme Swatches in RGBA */
+/* { color: rgba(30, 35, 38, 1); }
+{ color: rgba(216, 203, 179, 1); }
+{ color: rgba(12, 11, 10, 1); }
+{ color: rgba(114, 109, 100, 1); }
+{ color: rgba(165, 149, 129, 1); } */
+/* Color Theme Swatches in HSLA */
+/* { color: hsla(202, 11, 13, 1); }
+{ color: hsla(39, 32, 77, 1); }
+{ color: hsla(39, 9, 4, 1); }
+{ color: hsla(39, 6, 42, 1); }
+{ color: hsla(33, 16, 57, 1); } */
